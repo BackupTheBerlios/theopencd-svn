@@ -1,0 +1,10 @@
+
+/* Menu Text */
+#menu { 
+   color: white;
+   margin-top: 170px;
+}
+   
+/* Sub-menu text */
+#menu > ul ul li a {
+    color: white;}   

@@ -1,0 +1,13 @@
+@import "ocd_common.css";
+@import "tabs_style.css";
+@import "text_area.css";
+@import "side_icons.css";
+@import "side_menu.css";
+@import "../skins/default/skin.css";
+
+/* remove comment to enable structure guides  
+#tabs_area, #left_edge, #right_edge, #barright, #barleft, 
+#home_link, #menu, #logo_area {border: 1px #d22d08 solid}  */
+
+
+

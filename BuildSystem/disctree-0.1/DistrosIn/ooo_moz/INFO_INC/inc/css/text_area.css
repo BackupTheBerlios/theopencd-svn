@@ -1,0 +1,97 @@
+@import "ocd_common.css";
+/* ========================================================================
+*						T E X T   A N D   E D G E S
+
+/* ==== The left edge has 2 images ==== */
+#left_edge {
+background-image: url(../skins/default/tabs/plastik-bits-10.png);
+background-repeat: repeat-y;position: absolute;top: 20px;bottom: 12px;left: 170px;width: 10px;}
+
+#bottom_left_corner {background-image: url(../skins/default/tabs/plastik-bits-11.png);height: 30px;background-repeat: no-repeat;position: absolute;left: 0px;width: 10px;bottom: 0px;}
+
+/* ====================== */
+
+#bottom_edge {background-image: url(../skins/default/tabs/plastik-bits-12.png);background-position: 10px 0px;height: 30px;position: absolute;left: 0px;
+right: 0px;bottom: 0px;}
+
+/* ====================== */
+
+/* === The right edge has 3 images === */
+
+#right_edge {
+background-image: url(../skins/default/tabs/plastik-bits-09.png);
+background-repeat: repeat-y;position: absolute;top: 20px;bottom: 12px;right: 86px;width: 10px;}
+
+#top_right_corner {background-image: url(../skins/default/tabs/plastik-bits-04.png);height: 30px;background-repeat: no-repeat;position: absolute;top: 0px;right: 0px;width: 10px;}
+
+#bottom_right_corner {background-image: url(../skins/default/tabs/plastik-bits-13.png);height: 30px;background-repeat: no-repeat;position: absolute;bottom: 0px;right: 0px;width: 10px;}
+
+/* ====================== */
+
+
+#main_text_block, #screenshot_block {
+   overflow: auto;
+   position: fixed;
+   top: 48px;
+   width: auto;
+   height: auto;
+   left: 176px;
+   right: 92px;
+   bottom: 26px;
+   background-image: url(../skins/default/Ubuntu.png);
+   background-attachment: 	scroll;
+}
+
+
+#welcome_text_block {
+   overflow: auto;
+   position: fixed;
+   top: 30px;
+   width: auto;
+   height: auto;
+   left: 166px;
+   right: 0px;
+   bottom: 0px;
+   background-image: url(../skins/default/Ubuntu.png);
+}
+
+#about_text_block {
+   overflow: auto;
+   position: fixed;
+   top: 30px;
+   width: auto;
+   height: auto;
+   left: 166px;
+   right: 0px;
+   bottom: 0px;
+   background-image: url(../skins/default/hands.jpg);
+}
+
+#legend_block {
+   overflow: auto;
+   position: fixed;
+   top: 0px;
+   width: auto;
+   height: auto;
+   left: 20px;
+   right: 20px;
+   bottom: 20px;
+}
+
+#license_block {
+   overflow: auto;
+   position: fixed;
+   top: 2px;
+   width: auto;
+   height: auto;
+   left: 0px;
+   right: 0px;
+   bottom: 2px;
+}
+
+#screenshot_block p, #legend_block p { text-align: left}
+
+#welcome_text_block h1 {text-align: center}
+
+#language_list_area {
+background-repeat: repeat;position: absolute;top: 20px;left: 40px;bottom: 10px;right: 40px;}

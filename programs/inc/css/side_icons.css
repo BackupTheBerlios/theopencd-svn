@@ -1,26 +1,0 @@
-@import "buttons.css";
-
-#barright {
-   position: fixed;
-   padding:0;
-   top: 50px;
-   right: 0;
-   width: 68px;
-   margin:0;
-}
-
-
-#info_text1 {   font-size: 8pt;
-   font-family: "Arial", sans-serif;
-   margin-left: -18px;
-   text-align: center;
-   color: #7e7e7e;  }
-
-
-#info_text2 {   font-size: 9pt;
-   font-family: "Arial", sans-serif;
-   font-weight: bold;
-   margin-left: -18px;
-   line-height: 5pt;
-   text-align: center;
-   margin-top: 5px }

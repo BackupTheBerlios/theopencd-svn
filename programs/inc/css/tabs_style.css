@@ -1,108 +1,0 @@
-
-/* ========================================================================
-*						T A B S   A N D   E D G E S
-
-Key: T# = Tab number
-Two tab numbers signify a transition
-M: Middle of tab piece
-F: Front (active) tab
-B: Back (inactive) tab
-C: Corner
-*/
-/* === Define some common defenitions === */
-
-#tabs_area {
-background-repeat: repeat;position: absolute;top: 20px;left: 180px;bottom: 10px;right: 96px;}
-
-#C_T1_F, #C_T1_B {height: 30px;background-repeat: no-repeat;position: absolute;top: 0px;left: 0px;width: 10px;}
-#C_T1_F {background-image: url(../skins/default/tabs/plastik-bits-05.png)}
-#C_T1_B {background-image: url(../skins/default/tabs/plastik-bits-15.png)}
-
-#T1_M_F, #T1_M_B {background-position: 10px 0px;width: 120px;height: 30px;position: absolute;left: 0px;top: 0px;}
-
-#T1_M_F {background-image: url(../skins/default/tabs/plastik-bits-06.png)}
-#T1_M_B {background-image: url(../skins/default/tabs/plastik-bits-07.png)}
-
-#T1_T2_FB, #T1_T2_BF, #T1_T2_BB {width: 10px;height: 30px;position: absolute;background-repeat: no-repeat;left: 120px;top: 0px;}
-#T1_T2_FB {background-image: url(../skins/default/tabs/plastik-bits-01.png)}
-#T1_T2_BF {background-image: url(../skins/default/tabs/plastik-bits-17.png)}
-#T1_T2_BB {background-image: url(../skins/default/tabs/plastik-bits-02.png)}
-
-#T2_M_F, #T2_M_B {background-position: 10px 0px;width: 120px;height: 30px;position: absolute;left: 130px;top: 0px;}
-#T2_M_B {background-image: url(../skins/default/tabs/plastik-bits-07.png)}
-#T2_M_F {background-image: url(../skins/default/tabs/plastik-bits-06.png)}
-
-#T2_T3_FB, #T2_T3_BF, #T2_T3_BB {width: 10px;height: 30px;position: absolute;background-repeat: no-repeat;left: 250px;top: 0px;}
-#T2_T3_FB {background-image: url(../skins/default/tabs/plastik-bits-01.png)}
-#T2_T3_BF {background-image: url(../skins/default/tabs/plastik-bits-17.png)}
-#T2_T3_BB {background-image: url(../skins/default/tabs/plastik-bits-02.png)}
-
-#T3_M_F, #T3_M_B {background-position: 10px 0px;width: 90px;height: 30px;position: absolute;left: 260px;top: 0px;}
-#T3_M_B {background-image: url(../skins/default/tabs/plastik-bits-07.png)}
-#T3_M_F {background-image: url(../skins/default/tabs/plastik-bits-06.png)}
-
-#T3_NT_F, #T3_NT_B {width: 10px;height: 30px;position: absolute;background-repeat: no-repeat;left: 350px;top: 0px;}
-#T3_NT_F {background-image: url(../skins/default/tabs/plastik-bits-18.png)}
-#T3_NT_B {background-image: url(../skins/default/tabs/plastik-bits-03.png)}
-
-#NoTab {background-position: 10px 0px;height: 30px;position: absolute;left: 360px;
-right: 0px;top: 0px;
-background-image: url(../skins/default/tabs/plastik-bits-08.png)}
-
-/* Raise and lower tab texts */
-#T1_M_F, #T2_M_F, #T3_M_F { line-height:11pt; font-size: 0.8em; }
-#T1_M_B, #T2_M_B, #T3_M_B { line-height:15pt; font-size: 0.8em; }
-
-/* ==== First we have the left edge, with 2 images ==== */
-#left_edge {
-background-image: url(../skins/default/tabs/plastik-bits-10.png);
-background-repeat: repeat-y;position: absolute;top: 20px;bottom: 10px;left: 170px;width: 10px;}
-
-#bottom_left_corner {background-image: url(../skins/default/tabs/plastik-bits-11.png);height: 30px;background-repeat: no-repeat;position: absolute;left: 0px;width: 10px;bottom: 0px;}
-
-/* ====================== */
-
-#bottom_edge {background-image: url(../skins/default/tabs/plastik-bits-12.png);background-position: 10px 0px;height: 30px;position: absolute;left: 0px;
-right: 0px;bottom: 0px;}
-
-/* ====================== */
-
-/* === Finally, there is the right edge with 3 images === */
-
-#right_edge {
-background-image: url(../skins/default/tabs/plastik-bits-09.png);
-background-repeat: repeat-y;position: absolute;top: 20px;bottom: 10px;right: 86px;width: 10px;}
-
-#top_right_corner {background-image: url(../skins/default/tabs/plastik-bits-04.png);height: 30px;background-repeat: no-repeat;position: absolute;top: 0px;right: 0px;width: 10px;}
-
-#bottom_right_corner {background-image: url(../skins/default/tabs/plastik-bits-13.png);height: 30px;background-repeat: no-repeat;position: absolute;bottom: 0px;right: 0px;width: 10px;}
-
-/* ====================== */
-
-
-#tabs_text {font-size: 0.9em;position: absolute;top: 5px;left: 5px;}
-
-#tabs_text a:link {
-color: #3d3d3d;text-decoration: none;} 
-
-#tabs_text a:visited {
-color: #3d3d3d;text-decoration: none;}
-
-#tabs_text a:hover {color: #ec2759;text-decoration: none;}
-
-#tabs_text a:active {}
-
-#description_text_block, #screenshot_block, #extras_block, #front_block {
-   overflow: auto;
-   position: fixed;
-   top: 54px;
-   width: auto;
-   height: auto;
-   left: 186px;
-   right: 110px;
-   bottom: 40px;
-}
-
-#screenshot_block p, #extras_block p { text-align: left}
-
-#front_block h1 {text-align: center}

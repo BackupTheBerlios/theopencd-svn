@@ -1,0 +1,5 @@
+
+Error checking
+Launch file generation
+Take care of info dir
+More sensible block management?

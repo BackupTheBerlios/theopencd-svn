@@ -1,0 +1,2 @@
+[Launch]
+ExecuteFile=${cwd}\..\..\programs\winpt\install\winpt-install-1.0rc2.exe

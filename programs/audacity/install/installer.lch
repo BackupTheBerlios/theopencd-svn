@@ -1,0 +1,2 @@
+[Launch]
+ExecuteFile=${cwd}\..\..\programs\audacity\install\audacity-win-1.2.0-pre2b.exe

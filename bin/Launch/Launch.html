@@ -1,0 +1,123 @@
+<html>
+   <head>
+      <title>Launch</title>
+      <style type="text/css">
+      <!--
+      body {
+         background: #fff;
+         color: #000;
+         margin: 5px 1em 2em 75px;
+         font-family: verdana, helvetica, sans-serif;
+         text-decoration: none;
+         font-size: 12pt;
+      }
+
+      a {
+         color: #00c
+      }
+
+      td, th, a, h1, h2, caption, p  {
+         font-family: verdana, helvetica, sans-serif;
+         font-size: 12pt;
+         color: #000000;
+      }
+
+      table { border-collapse: collapse }
+      th  { padding: 0 3px; }
+      td { border:1px solid #888; padding: 1px 3px; }
+      th, td, caption { vertical-align: top; text-align:left; }
+      .uind { margin-left: -25px }
+
+      h1 {
+         font-size: 18pt;
+         margin: 0 0 1em -50px;
+         text-align:left;
+         border-bottom:2px solid #000;
+      }
+
+      h2 {
+         text-align:left;
+         font-size: 14pt;
+         margin: 2em 0 0.5em -25px;
+      }
+
+
+      p { margin: 0 0 1em 0 }
+
+      p.home {
+         margin: 1em 0 0 -50px;
+         text-align:center;
+         border-top:2px solid #000
+      }
+
+      table.parms {
+         margin-left: 1em;
+      }
+
+
+
+      tr.sec td {
+         font-weight: bold;
+         border: 0;
+         padding-top: 1em;
+      }
+
+      tr.seh1 {
+         margin-left: 1em;
+      }
+
+      dt { margin: 0.5em 0 0 0 }
+      -->
+      </style>
+
+   </head>
+   <body>
+      <h1><img src="disc_icon.gif" alt="" width="32" height="32"/>Launch</h1>
+      <p class="uind">Copyleft (C) 2004 <a href="mailto:brett@chaingang.org">Brett McNamara</a></p>
+
+      <h2>What is Launch?</h2>
+      <p>Launch takes an INI file and uses the parameters to call ShellExecute.</p>
+
+      <h2>Setup</h2>
+      <p><i>Launch.exe</i> is the only executable.  It will look for the file <i>launch.ini</i> at startup or it will accept a file name from the command line.</p>
+
+
+      <table class="parms">
+         <tr class="sec"><td colspan="3">Section: Launch</td></tr>
+         <tr class="sech"><th>Parameter</th><th>Default</th><th>Description</th></tr>
+         <tr><td>ExecuteFile</td><td></td>
+            <td>File to run, no (") marks required here.</td>
+         </tr>
+         <tr><td>ExecuteParameters</td><td></td>
+            <td>Extra command line information, if there is any.</td>
+         </tr>
+         <tr><td>ExecuteDirectory</td><td></td>
+            <td>Directory the program uses as home.</td>
+         </tr>
+         <tr><td>ShowCommand</td><td>0</td>
+            <td>For debug purposes, when set to 1 it shows all the commands read.</td>
+         </tr>
+      </table>
+
+      <h2>Variable Substitution</h2>
+      <p>This program was written to help with interactive CDs.  Often, programs want complete paths that are unknown until the user places the CD in the drive.  To aid in this, <i>Launch.exe</i> has a number of defined tokens that will be replaced at runtime.</p>
+      <dl>
+         <dt>${cwd}</dt><dd>The complete home path of the <i>Launch.exe</i> program.</dd>
+         <dt>${drive}</dt><dd>The single drive letter from ${cwd}.</dd>
+         <dt>${inipath}</dt><dd>The path of to the current .ini file.</dd>
+         <dt>${langid}</dt><dd>The international language identification for current OS. (e.g. ENU, FRA)</dd>
+         <dt>${langalias}</dt><dd>The translation of ${langid} as defined as ${langid}=${langalias} in the LanguageAlias section. A default option is also available. e.g.
+         <p><tt>[LanguageAlias]<br/>default=en<br/>FRA=fr<br/>FRC=fr</tt></p>
+         </dd>
+      </dl>
+
+
+      <h2>Download</h2>
+      <p>Download file: <a href="Launch.zip">Launch.zip</a></p>
+      <p>The zip also contains the source code and project files for a VC++ 6.0 project.</p>
+      <p>This program is released under the GPL (GNU General Public License). It is free software and comes with ABSOLUTELY NO WARRANTY. See a copy of the <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a> for details.</p>
+      <p>While this is truly free software and may be abused within the constraints of the GPL, I wouldn't mind being <a href="mailto:brett@chaingang.org">contacted</a> if into finds it's way into any interesting places.</p>
+
+      <p class="home"><a href="http://www.chaingang.org/code/Launch/Launch.html">Launch Home</a></p>
+   </body>
+</html>

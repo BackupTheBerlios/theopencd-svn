@@ -1,0 +1,1 @@
+LPTSTR LoadLanguage(LPTSTR langId);
